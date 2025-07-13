@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <!-- Bouton Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
     <!-- Header -->
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
@@ -31,7 +36,7 @@
     <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Tabeg Zouhair</h1>
-        <h3>And I'm a <span>Web & Mobile Developer</span></h3>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
         
         <div class="social-media">
             <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -160,10 +165,136 @@
         </div>
     </section>
 
-    <!-- project section -->
+    <!-- Project Section -->
     <section class="project" id="project">
-        
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="project-container">
+            <!-- Project 1 : Bazzar -->
+            <div class="project-card">
+                <div class="project-icon"><i class='bx bxs-store'></i></div>
+                <h3>Bazzar</h3>
+                <p>A traditional shopping web app where users can browse and buy handmade or local products.</p>
+                
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                </div>
+
+                <a href="https://github.com/zouhair1tabeg/PHP/tree/master/Bazar" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <!-- Project 2 : Fitness Tracker -->
+            <div class="project-card featured">
+                <div class="project-banner">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <h3>Fitness Tracker</h3>
+                <p>An Android & iOS app that tracks steps, calories, heart rate, distance, and more.</p>
+
+                <div class="project-tech">
+                    <span>Flutter</span>
+                    <span>Firebase</span>
+                    <span>Google Fit API</span>
+                    <span>HealthKit</span>
+                </div>
+
+                <a href="https://github.com/zouhair1tabeg/Fitness_Tracker" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- View More Button - Outside project-container but inside section -->
+        <div class="view-more-container">
+            <a href="https://github.com/zouhair1tabeg" target="_blank" class="view-more-btn">
+                View More Projects
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+                <!-- Social Media Below Form -->
+                <div class="social-container">
+                    <h3>Connect With Me</h3>
+                    <div class="social-media">
+                        <a href="https://github.com/zouhair1tabeg" class="social-icon" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tabeg-zouhair-8412a0344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/__zouh.air?igsh=MXRjeWZoanM1YTd2eA%3D%3D&utm_source=qr" class="social-icon" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="portfolio-footer">
+        <div class="footer-container">
+            <!-- Colonne 1 : Introduction -->
+            <div class="footer-col intro-col">
+                <h2>Tabeg Zouhair's Portfolio</h2>
+                <p class="footer-description">Thank you for exploring my portfolio. Let's connect and create project together!</p>
+            </div>
+
+            <!-- Colonne 2 : Liens rapides -->
+            <div class="footer-col links-col">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonne 3 : Contact -->
+            <div class="footer-col contact-col">
+                <h3 class="footer-title">Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i> +212 696341951</li>
+                    <li><i class="fas fa-envelope"></i> tabeg.zouhair@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Morocco</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Zouhair Tabeg &copy; 2025</p>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
